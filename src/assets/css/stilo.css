@@ -1,0 +1,240 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+input, button {
+  background-color: transparent;
+  border-radius: 0;
+  outline: none;
+  border: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+strong {
+  font-weight: bold; }
+
+a {
+  text-decoration: none; }
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+html body {
+  font-family: sans-serif; }
+  html body header {
+    float: left;
+    width: 100%;
+    border-bottom: 3px solid #cfd0d9;
+    padding: 0 150px; }
+    html body header .logo {
+      width: 30%;
+      float: left;
+      margin-top: 23px;
+      margin-bottom: 18px; }
+    html body header .menu {
+      width: 21%;
+      float: right;
+      margin-top: 40px;
+      margin-bottom: 18px; }
+      html body header .menu ul li {
+        display: inline;
+        padding: 0 10px; }
+        html body header .menu ul li a {
+          text-decoration: none;
+          color: #151515;
+          border-bottom: 4px solid #e4e4e4;
+          padding: 10px 0;
+          text-transform: capitalize; }
+          html body header .menu ul li a:hover {
+            border-bottom: 4px solid #1980b6; }
+  html body main section {
+    float: left;
+    width: 100%; }
+    html body main section.banner {
+      float: left;
+      width: 100%; }
+      html body main section.banner .slick-prev {
+        width: 26px;
+        height: 50px;
+        left: 177px;
+        z-index: 2;
+        background-image: url(../img/arrow-left.png);
+        background-repeat: no-repeat; }
+        html body main section.banner .slick-prev:before {
+          display: none; }
+      html body main section.banner .slick-next {
+        right: 175px;
+        width: 26px;
+        height: 50px;
+        background-image: url(../img/arrow-right.png);
+        background-repeat: no-repeat; }
+        html body main section.banner .slick-next:before {
+          display: none; }
+      html body main section.banner .slick-dots li {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        margin: 0 5px;
+        padding: 0;
+        cursor: pointer;
+        top: -54px;
+        border-bottom: 3px solid #939393; }
+        html body main section.banner .slick-dots li:hover {
+          border-bottom: 3px solid #1980b6; }
+        html body main section.banner .slick-dots li button:before {
+          display: none; }
+      html body main section.banner img {
+        width: 100%;
+        height: auto; }
+      html body main section.banner.slick-dotted.slick-slider {
+        margin-bottom: 0; }
+    html body main section .content-titulo {
+      width: 100%;
+      float: left; }
+      html body main section .content-titulo h2 {
+        text-align: center;
+        font-size: 45px;
+        font-weight: 700;
+        font-family: sans-serif;
+        text-transform: capitalize;
+        color: #1980b6;
+        height: 130px;
+        line-height: 130px; }
+    html body main section.conteudo-final {
+      margin-left: 6px;
+      text-align: center;
+      margin: 0 auto;
+      padding: 0 183px;
+      margin-bottom: 40px; }
+      html body main section.conteudo-final ul li {
+        display: inline; }
+        html body main section.conteudo-final ul li .conteudo-pe {
+          width: 33%;
+          float: left;
+          border: 1px solid #e4e4e4; }
+          html body main section.conteudo-final ul li .conteudo-pe .imagem-pe {
+            padding: 50px; }
+          html body main section.conteudo-final ul li .conteudo-pe .content1 h2 {
+            font-size: 28px;
+            color: #2888bb;
+            margin-bottom: 23px; }
+            html body main section.conteudo-final ul li .conteudo-pe .content1 h2 span {
+              font-size: 15px;
+              left: 1px;
+              position: relative;
+              top: -8px; }
+          html body main section.conteudo-final ul li .conteudo-pe .content1 p {
+            font-size: 14px;
+            color: #2888bb;
+            margin-bottom: 32px; }
+          html body main section.conteudo-final ul li .conteudo-pe .content1 button {
+            width: 66.4%;
+            height: 70px;
+            color: #fff;
+            background-color: #1980b6;
+            font-weight: bold;
+            font-size: 20px;
+            border: none;
+            border-radius: 5%;
+            margin-bottom: 27px; }
+            html body main section.conteudo-final ul li .conteudo-pe .content1 button a {
+              font-weight: bold;
+              color: #fff; }
+        html body main section.conteudo-final ul li .conteudo-coracao {
+          width: 33%;
+          float: left;
+          border: 1px solid #e4e4e4; }
+          html body main section.conteudo-final ul li .conteudo-coracao .imagem-coracao {
+            padding: 54px; }
+          html body main section.conteudo-final ul li .conteudo-coracao .content2 {
+            margin-top: 16px; }
+            html body main section.conteudo-final ul li .conteudo-coracao .content2 h2 {
+              font-size: 28px;
+              color: #2888bb;
+              margin-bottom: 23px; }
+              html body main section.conteudo-final ul li .conteudo-coracao .content2 h2 span {
+                font-size: 15px;
+                left: 1px;
+                position: relative;
+                top: -8px; }
+            html body main section.conteudo-final ul li .conteudo-coracao .content2 p {
+              font-size: 14px;
+              color: #2888bb;
+              margin-bottom: 32px; }
+            html body main section.conteudo-final ul li .conteudo-coracao .content2 button {
+              width: 66.4%;
+              height: 70px;
+              color: #fff;
+              background-color: #1980b6;
+              font-weight: bold;
+              font-size: 20px;
+              border: none;
+              border-radius: 5%;
+              margin-bottom: 27px; }
+              html body main section.conteudo-final ul li .conteudo-coracao .content2 button a {
+                font-weight: bold;
+                color: #fff; }
+        html body main section.conteudo-final ul li .conteudo-obto {
+          width: 33%;
+          float: left;
+          border: 1px solid #e4e4e4; }
+          html body main section.conteudo-final ul li .conteudo-obto .imagem-obito {
+            padding: 50px; }
+          html body main section.conteudo-final ul li .conteudo-obto .content3 h2 {
+            font-size: 28px;
+            color: #2888bb;
+            margin-bottom: 23px; }
+            html body main section.conteudo-final ul li .conteudo-obto .content3 h2 span {
+              font-size: 15px;
+              left: 1px;
+              position: relative;
+              top: -8px; }
+          html body main section.conteudo-final ul li .conteudo-obto .content3 p {
+            font-size: 14px;
+            color: #2888bb;
+            margin-bottom: 32px; }
+          html body main section.conteudo-final ul li .conteudo-obto .content3 button {
+            width: 66.4%;
+            height: 70px;
+            color: #fff;
+            background-color: #1980b6;
+            font-weight: bold;
+            font-size: 20px;
+            border: none;
+            border-radius: 5%;
+            margin-bottom: 27px; }
+            html body main section.conteudo-final ul li .conteudo-obto .content3 button a {
+              font-weight: bold;
+              color: #fff; }
+
+/*# sourceMappingURL=stilo.css.map */

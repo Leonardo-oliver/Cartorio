@@ -1,0 +1,237 @@
+$font: 'Roboto', sans-serif;
+
+@mixin clearfix {
+  clear: both;
+  &:before {
+    content: '';
+    display: block;
+  }
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin container{
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
+@mixin centerContent{
+  .e-center-content{
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+    padding: 40px 0;
+    @include breakpoint('mobile'){
+      width: 90%;
+      padding: 20px 0;
+    }
+  }
+}
+
+@mixin slickList{
+  .slick-list{
+    @include container();
+    overflow: hidden;
+  }
+}
+
+@mixin spriteSetup{
+  text-indent: -999em;
+  text-align: left;
+  overflow: hidden;
+  display: block;
+}
+
+@mixin hide-text {
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+}
+
+@mixin inline-block {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: middle;
+}
+
+@mixin box-shadow($string) {
+  -ms-box-shadow: $string;
+  -o-box-shadow: $string;
+  -moz-box-shadow: $string;
+  -webkit-box-shadow: $string;
+  box-shadow: $string;
+}
+
+@mixin text-shadow($string) {
+  -ms-text-shadow: $string;
+  -o-text-shadow: $string;
+  -moz-text-shadow: $string;
+  -webkit-text-shadow: $string;
+  text-shadow: $string;
+}
+
+@mixin background-size($string) {
+  background-size: $string;
+}
+
+@keyframes move {
+  0% { top: -50px; }
+  50% { top: -60px; }
+  100% { top: -50px; }
+}
+@-webkit-keyframes move {
+  0% { top: -50px; }
+  50% { top: -60px; }
+  100% { top: -50px; }
+}
+@-moz-keyframes move {
+  0% { top: -50px; }
+  50% { top: -60px; }
+  100% { top: -50px; }
+}
+
+/**
+ * Flexbox prefixes
+ */
+ @mixin display-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin flex-direction($direction) {
+  @if $direction == column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@mixin justify-content($position) {
+  @if $position == center {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+@mixin align-items($position) {
+  @if $position == center {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  @if $position == flex-end {
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -moz-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+}
+
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+
+@mixin translate ($x, $y) {
+ @include transform(translate($x, $y));
+}
+
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+
+@mixin transition($transition) {
+  -moz-transition:    $transition;
+  -o-transition:      $transition;
+  -webkit-transition: $transition;
+  transition:         $transition;
+}
+
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  @include translate(-50%,-50%)
+}
+
+@mixin centerV {
+  position: absolute;
+  top: 50%;
+  @include translate(0,-50%)
+}
+
+@mixin centerH {
+  position: absolute;
+  left: 50%;
+  @include translate(-50%,0)
+}
+@mixin scrollbar {
+  &::-webkit-scrollbar-track {
+    background-color: #ccc;
+  }
+
+  &::-webkit-scrollbar {
+    background-color: #ccc;
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #212424;
+  }
+}
+
+@mixin hiddenHeading {
+  font-size : 0;
+  width     : 1px;
+  height    : 1px;
+  display   : inline-block;
+  overflow  : hidden;
+  position  : absolute !important;
+  border    : 0 !important;
+  padding   : 0 !important;
+  margin    : 0 !important;
+  clip      : rect(1px 1px 1px 1px); // for Internet Explorer
+  clip      : rect(1px, 1px, 1px, 1px);
+}
+
+@mixin linkHover($color) {
+    color: $color;
+    text-shadow: 0 0 0 $color, 0 0 0 $color, 0 0 0 $color;
+}
+
+@mixin scrollbar($colorTrack, $colorBar, $widthBar, $colorThumb) {
+  &::-webkit-scrollbar-track {
+    background-color: $colorTrack;
+  }
+
+  &::-webkit-scrollbar {
+    background-color: $colorBar;
+    width: $widthBar;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $colorThumb;
+  }
+}
